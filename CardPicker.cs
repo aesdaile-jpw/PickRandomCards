@@ -27,9 +27,9 @@ class CardPicker
     {
         int value = Random.Shared.Next(1, 14);
         if (value == 1) return "Ace";
-        if (value == 2) return "Jack";
-        if (value == 3) return "Queen";
-        if (value == 4) return "King";
+        if (value == 11) return "Jack";
+        if (value == 12) return "Queen";
+        if (value == 13) return "King";
         return value.ToString();
     }
 
