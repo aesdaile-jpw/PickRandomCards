@@ -13,5 +13,25 @@ class CardPicker
         return pickedCards;
     }
 
+    private static string RandomSuit()
+    {
+        int value = Random.Shared.Next(1, 5);   // pick a random number from 1 to 4
+        if (value == 1) return "Spades";
+        if (value == 2) return "Hearts";
+        if (value == 3) return "Clubs";
+        return "Diamonds";
+    }
+
+
+    private static string RandomValue()
+    {
+        int value = Random.Shared.Next(1, 14);
+        if (value == 1) return "Ace";
+        if (value == 2) return "Jack";
+        if (value == 3) return "Queen";
+        if (value == 4) return "King";
+        return value.ToString();
+    }
+
 
 }
