@@ -25,7 +25,7 @@ class CardPicker
 
     private static string RandomValue()
     {
-        int value = Random.Shared.Next(1, 14);
+        int value = Random.Shared.Next(1, 14);  // pick a random number from 1 to 13
         if (value == 1) return "Ace";
         if (value == 11) return "Jack";
         if (value == 12) return "Queen";
