@@ -9,7 +9,13 @@
 
             if ( int.TryParse(line, out int numberOfCards))
             {
-                foreach (string card in CardPicker.PickSomeCards(numberOfCards))
+                //foreach (string card in CardPicker.PickSomeCards(numberOfCards))
+                //{
+                //    Console.WriteLine(card);
+                //}     This was my answer to the exercise, but the book's answer is below.
+
+                string[] cards = CardPicker.PickSomeCards(numberOfCards);
+                foreach (string card in cards)
                 {
                     Console.WriteLine(card);
                 }
